@@ -189,8 +189,8 @@ void update_mqtt() {
     }
     last_machine_running = machine_running;
     
-    //timeinfo.tm_hour == 23 && timeinfo.tm_min == 59
-    if (timeinfo.tm_min == 59) {
+    //
+    if (timeinfo.tm_hour == 23 && timeinfo.tm_min == 59) {
         
         char daily_total_payload[70];
         total_working_time = working_time;
